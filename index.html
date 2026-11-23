@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Handcrafted Filipino pastries, cakes, and baked goods.">
+  <title>Harana | Filipino Bakery</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="#home" class="logo">HARANA<span>BAKERY</span></a>
+
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#menu">Our Pastries</a>
+        <a href="#about">Our Story</a>
+        <a href="#order">Order</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">FILIPINO BAKERY & PATISSERIE</p>
+
+        <h1>A little sweetness.<br>
+          <em>A taste of home.</em>
+        </h1>
+
+        <p class="hero-description">
+          Thoughtfully handcrafted Filipino pastries,
+          inspired by tradition and made with love.
+          A celebration of heritage, warmth, and
+          life's sweetest moments.
+        </p>
+
+        <a href="#menu" class="button">Explore Our Pastries</a>
+      </div>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section class="menu-section section-container" id="menu">
+      <p class="eyebrow">FRESHLY MADE WITH LOVE</p>
+      <h2>Our Sweet Collection</h2>
+      <p class="section-intro">
+        From nostalgic Filipino favorites to modern
+        interpretations, discover something delightful.
+      </p>
+
+      <div class="menu-grid">
+
+        <article class="menu-card">
+          <span class="pastry-number">01</span>
+          <h3>Ensaymada</h3>
+          <p>
+            Soft, buttery Filipino brioche topped
+            with delicate buttercream, sugar,
+            and cheese.
+          </p>
+        </article>
+
+        <article class="menu-card">
+          <span class="pastry-number">02</span>
+          <h3>Cookies</h3>
+          <p>
+            Freshly baked cookies with delightful
+            flavors, rich textures, and a
+            homemade touch.
+          </p>
+        </article>
+
+        <article class="menu-card">
+          <span class="pastry-number">03</span>
+          <h3>Mochi Cakes</h3>
+          <p>
+            Wonderfully chewy, tender cakes
+            inspired by Asian flavors and
+            contemporary baking.
+          </p>
+        </article>
+
+        <article class="menu-card">
+          <span class="pastry-number">04</span>
+          <h3>Filled Buns</h3>
+          <p>
+            Pillowy soft bread filled with
+            luscious sweet fillings and
+            baked until golden.
+          </p>
+        </article>
+
+        <article class="menu-card">
+          <span class="pastry-number">05</span>
+          <h3>Sans Rival</h3>
+          <p>
+            A classic Filipino dessert featuring
+            layers of crisp meringue, rich
+            buttercream, and cashews.
+          </p>
+        </article>
+
+        <article class="menu-card">
+          <span class="pastry-number">06</span>
+          <h3>Brazo de Mercedes</h3>
+          <p>
+            A delicate rolled meringue filled
+            with smooth, golden custard.
+            Light, elegant, and indulgent.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about">
+      <div class="section-container about-content">
+        <p class="eyebrow">OUR STORY</p>
+        <h2>Rooted in tradition.<br>
+          <em>Baked with heart.</em>
+        </h2>
+        <p>
+          We believe that every pastry tells a story.
+          Inspired by the flavors and traditions of
+          the Philippines, our bakery brings together
+          familiar comforts and a modern approach
+          to the art of baking.
+        </p>
+        <p>
+          Whether you're celebrating a special
+          occasion or simply treating yourself,
+          we hope every bite feels like home.
+        </p>
+      </div>
+    </section>
+
+    <!-- ORDER FORM -->
+    <section class="order-section section-container" id="order">
+      <p class="eyebrow">SOMETHING SWEET AWAITS</p>
+      <h2>Place an Order</h2>
+      <p class="section-intro">
+        Have something delicious in mind?
+        Complete the form below to send us
+        your order inquiry.
+      </p>
+
+      <form id="orderForm" class="order-form">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName"
+                   name="firstName" required
+                   autocomplete="given-name"
+                   placeholder="Your first name">
+          </div>
+
+          <div class="form-group">
+            <label for="lastName">Last Name *</label>
+            <input type="text" id="lastName"
+                   name="lastName" required
+                   autocomplete="family-name"
+                   placeholder="Your last name">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email"
+                   name="email" required
+                   autocomplete="email"
+                   placeholder="you@example.com">
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone"
+                   name="phone" required
+                   autocomplete="tel"
+                   placeholder="(555) 123-4567">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="orderDetails">Your Order *</label>
+          <textarea id="orderDetails"
+                    name="orderDetails"
+                    rows="6"
+                    required
+                    placeholder="Tell us which pastries you'd like, quantities, and your preferred pickup date."></textarea>
+        </div>
+
+        <button type="submit" class="button submit-button">
+          Send Order Inquiry
+        </button>
+
+        <p class="form-note">
+          Submitting will open your email application.
+          Please press Send to deliver your inquiry.
+          Orders are subject to confirmation.
+        </p>
+
+      </form>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">HARANA BAKERY</div>
+      <p>Handcrafted sweetness. Filipino at heart.</p>
+      <p class="copyright">
+        &copy; 2026 Harana Bakery. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ORDER EMAIL SCRIPT -->
+  <script>
+    document.getElementById("orderForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const firstName = document.getElementById("firstName").value.trim();
+      const lastName = document.getElementById("lastName").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const order = document.getElementById("orderDetails").value.trim();
+
+      const subject = "New Bakery Order Inquiry - " + firstName + " " + lastName;
+
+      const body =
+        "NEW BAKERY ORDER INQUIRY\n\n" +
+        "First Name: " + firstName + "\n" +
+        "Last Name: " + lastName + "\n" +
+        "Email: " + email + "\n" +
+        "Phone Number: " + phone + "\n\n" +
+        "ORDER DETAILS:\n" + order + "\n\n" +
+        "Please contact me to confirm my order.";
+
+      const mailtoLink =
+        "mailto:daa052185@gmail.com" +
+        "?subject=" + encodeURIComponent(subject) +
+        "&body=" + encodeURIComponent(body);
+
+      window.location.href = mailtoLink;
+    });
+  </script>
+
+</body>
+</html>
