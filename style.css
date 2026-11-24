@@ -365,3 +365,14 @@ a {
     padding: 25px 20px;
   }
 }
+/* MENU CARD PHOTOGRAPHS */
+
+.menu-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: block;
+}
